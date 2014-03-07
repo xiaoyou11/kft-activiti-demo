@@ -148,6 +148,7 @@ var handleOpts = {
 			click: function() {
 				var taskId = $(this).data('taskId');
 				
+				//构造一个div用来填写驳回的理由
 				$('<div/>', {
 					title: '填写驳回理由',
 					html: "<textarea id='leaderBackReason' style='width: 250px; height: 60px;'></textarea>"
@@ -245,7 +246,7 @@ var handleOpts = {
 						text: '取消',
 						click: function() {
 							$(this).dialog('close');
-							$('#deptLeaderAudit').dialog('close');
+							$('#hrAudit').dialog('close');
 						}
 					}]
 				});
@@ -381,7 +382,7 @@ function handle() {
 	// 当前节点的中文名称
 	var tname = $(this).attr('tname');
 	
-	// 请假记录ID
+	// 请假单记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
 	// 任务ID

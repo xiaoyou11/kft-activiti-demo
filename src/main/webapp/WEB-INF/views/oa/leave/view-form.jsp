@@ -25,4 +25,4 @@
 				<td class="label">请假事由：</td>
 				<td name="reason"></td>
 			</tr>
-		</table>
+</table>

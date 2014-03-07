@@ -20,7 +20,7 @@ PropertyFileUtil.init();
 	<%@ include file="/common/include-jquery-ui-theme.jsp" %>
     <link rel="stylesheet" type="text/css" href="${ctx }/css/menu.css" />
     <%@ include file="/common/include-custom-styles.jsp" %>
-	<link href="${ctx }/css/main.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet"  type="text/css" href="${ctx }/css/main.css"/>
 	<style type="text/css">
 	.ui-tabs-panel {height: 100%; width: 100%;}
 	.ui-tabs .ui-tabs-nav li a {padding-right: .5em;}

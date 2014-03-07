@@ -18,7 +18,7 @@ public class PageUtil {
         page.setPageNo(pageNumber);
         int pageSize = Integer.parseInt(StringUtils.defaultIfBlank(request.getParameter("ps"), String.valueOf(PAGE_SIZE)));
         page.setPageSize(pageSize);
-        int firstResult = page.getFirst() - 1;
+        int firstResult = page.getFirst() - 1; //第一条记录的索引
         int maxResults = page.getPageSize();
         return new int[]{firstResult, maxResults};
     }
